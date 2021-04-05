@@ -1,0 +1,120 @@
+<!--<form action="add">
+    enter 1st number: <input type='text' name='num1'><br>
+    enter 2st number: <input type='text' name='num2'><br>
+    <input type='submit'>
+</form>-->
+{% load static%}
+{% static "images" as baseUrl%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset='utf-8'>
+<meta http-eqiv='X-UA-Compatible' content='IE=edge'>
+<title>League of Legends</title>
+<link rel="stylesheet" href="{% static 'styles/stylenew.css'%}">
+ <meta name='viewport' content='width=device-width', initial.scale=1>
+
+</head>
+
+<body>
+<form action="add">
+{% csrf_token %}
+<!--<div>
+  <h1 align='center' class='h1cls'>SKILLS</h1>
+
+<table align='center'>
+  <tr>
+    <th class='h1cls'>Team Blue</th>
+    <th class='h1cls'>Team Red</th>
+   
+  <tr>
+    <td><div class="textbox" align='center'>
+    <input type="text" name="num1" placeholder="Gold per min">
+  </div></td>
+    <td><div class="textbox" align='center'>
+    <input type="text" name="num6" placeholder="Gold per min">
+  </div></td>
+  
+  </tr>
+
+  <tr>
+    <td><div class="textbox" align='center'>
+     <input type="text" name="num2" placeholder="Total experience">
+  </div></td>
+    <td><div class="textbox" align='center'>
+     <input type="text" name="num7" placeholder="Total experience">
+  </div></td>
+  </tr>
+
+    <tr>
+    <td><div class="textbox" align='center'>
+     <input type="text" name="num3" placeholder="Total Jungle Minions Killed">
+  </div></td>
+    <td><div class="textbox" align='center'>
+     <input type="text" name="num8" placeholder="Total Jungle Minions Killed">
+  </div></td>
+    
+  </tr>
+
+    <tr>
+    <td><div class="textbox" align='center'>
+     <input type="text" name="num4" placeholder="Total Minions Killed">
+  </div></td>
+    <td><div class="textbox" align='center'>
+     <input type="text" name="num9" placeholder="Total Minions Killed">
+  </div></td>
+  </tr> 
+    <tr>
+    <td><div class="textbox" align='center'>
+     <input type="text" name="num5" placeholder="CS per min">
+  </div></td>
+    <td><div class="textbox" align='center'>
+     <input type="text" name="num10" placeholder="CS per min">
+  </div></td>
+  </tr> 
+
+  </tr>
+</table>
+
+  <div align='center'>
+     <input type="submit" class="btn">
+  </div>
+  </div>
+</form>
+-->
+
+
+  <h1 class="h1cls" align='center'>SKILLS</h1>
+
+  <div class="row">
+  <div class="column1">
+  	  <div class="textbox"  >
+	    <input class="txtbx" type="text" name="num1" placeholder="Blue Gold per min">
+	  </div>
+
+	    <div class="textbox"  >
+	     <input class="txtbx" type="text" name="num2" placeholder="Blue Total experience">
+	  </div>
+
+
+
+	</div>
+	<div class="column2">
+    	<div class="textbox"  >
+	     <input class="txtbx" type="text" name="num6" placeholder="Red Gold per min">
+	  </div>
+  <div class="textbox"  >
+	     <input class="txtbx" type="text" name="num7" placeholder="Red Total experience">
+	  </div>
+
+	</div>
+  </div>
+  <div align='center' class="btncol">
+     <input type="submit" class="btn">
+  </div>
+</form>
+
+
+</body>
+
+</html>

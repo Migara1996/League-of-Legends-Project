@@ -1,0 +1,27 @@
+<!--<h1>{{result}}</h1>-->
+
+{% load static%}
+{% static "images" as baseUrl%}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset='utf-8'>
+<meta http-eqiv='X-UA-Compatible' content='IE=edge'>
+<title>League of Legends</title>
+<link rel="stylesheet" href="{% static 'styles/style3.css'%}">
+ <meta name='viewport' content='width=device-width', initial.scale=1>
+
+</head>
+
+<body>
+
+{% csrf_token %}
+<div class='login-box' align='center'>
+<h2>Winning Team and Winning Probability</h2>
+  <h2>{{result}}</h2>
+
+</div>
+
+</body>
+
+</html>

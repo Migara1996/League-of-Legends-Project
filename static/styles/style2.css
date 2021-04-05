@@ -1,0 +1,42 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(Nbg.jpg) no-repeat;
+  background-size: cover;
+  opacity:1
+}
+.login-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: Black;
+}
+
+.h1cls {
+    padding-top: 50px;
+    text-shadow: 3px 1px 2px #29e7ff;
+}
+
+.btn {
+    padding: 10px 30px;
+    width: 10%;
+    color: white;
+    background: #03A9F4;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+.row {
+    margin: auto;
+    width: 50%;
+    display: flex;
+}
+
+
